@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pétalos de amapola</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style type="text/css">
+  table.tabla_general {
+    font-size: 19px;
+    border: 1px solid #CCC; 
+    font-family: Arial, Helvetica, sans-serif;
+  } 
+  .tabla_general td {
+    padding: 4px;
+    margin: 3px;
+    border: 1px solid #3D3939;
+  }
+  .tabla_general th {
+    background-color: #FF8F10; 
+    color: #3D3939;
+    font-weight: bold;
+  }
+   .tabla_general .color1 {
+    background-color: #FFB35D; 
+    color: #3D3939;
+    font-weight: bold;
+  }
+   .tabla_general .color2 {
+    background-color: #FED6A3; 
+    color: #3D3939;
+    font-weight: bold;
+  }
+  .tabla_general .color3 {
+    background-color: #FFC57C; 
+    color: #3D3939;
+    font-weight: bold;
+  }
+  tfoot{
+    text-align: center;
+  }
+  .main {
+    padding-left: 3%;
+    padding-top: 3%;
+    padding-bottom: 8%;
+  }
+  .mermaid{
+    padding-left: 5%;
+    padding-top: 4%;
+    padding-bottom: 8%;
+  }
+  h2{
+    padding-right: 38%;
+    font-size: 35px !important;
+  }
+</style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="contenedor">
+        <a href="index.html"><img class ="logo"  src="img/logo.jpeg" alt="logo"> </a>
+        <img class ="icon-menu" id="btn-menu" src="img/menu.png" alt="menu"> </a>
+        <nav class="nav" id="nav">
+          <ul class="menu">
+            <li class="menu__item"><a href="index.html" class="menu__link select">Inicio</a></li>
+            <li class="menu__item"><a href="sobremi.html" class="menu__link">Sobre mi</a></li>
+            <li class="menu__item"><a href="servicios.html" class="menu__link">Servicios</a></li>
+            <li class="menu__item"><a href="contacto.html" class="menu__link">Contacto</a></li>
+            <li class="menu__item"><a href="mapa.html" class="menu__link">Localización</a></li>
+            <li class="menu__item"><a href="mapa-2.html" class="menu__link">¿Dónde enviamos?</a></li>
+            <li class="menu__item"><a href="tabla.html" class="menu__link">Info</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <main class="main">
+      <div class="contenedor">
+        <section class="sobremi">
+                 
+			  
+          <h1>Presupuesto</h1>
+   
+            <table class="tabla_general">
+            <thead><tr><th colspan="4">Packs de flores disponibles</th></tr></thead><tbody>
+             <tr><td class="color1">Número del pack</td><td class="color1">Productos</td><td class="color1">Precio</td><td class="color1">Precio del envio</td></tr>
+             <tr><td class="color2">Pack 1</td><td class="color2">Ramo + 1 complemento </td><td class="color2">120 €</td><td class="color2">5 €</td></tr>
+             <tr><td class="color3">Pack 2</td><td class="color3">Ramo + 2 complemento </td><td class="color3">140 €</td><td class="color3">5 €</td></tr>
+             <tr><td class="color2">Pack 3</td><td class="color2">1 ramo grande + 1 ramo pequeño</td><td class="color2">125 €</td><td class="color2">6 €</td></tr>
+             <tr><td class="color3">Pack 4</td><td class="color3">2 ramos + 2 complementos</td><td class="color3">160 €</td><td class="color3">6 €</td></tr>
+             <tr><td class="color2">Pack 5</td><td class="color2">2 ramos + 3 complementos</td><td class="color2">180 €</td><td class="color2">7 €</td></tr></tbody>
+             <tfoot><tr><td colspan="4" class="color1">También se elaboran packs a medida</td></tr></tfoot>
+            </table>
+        </section>
+
+ 	    <h1>Sitios donde he ralizado talleres</h1>
+         <iframe
+      style=" width: 100%; height: 500px;"
+        src= mapatallers/index.html>
+      </iframe>
+
+<!-- Mermaid.js -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <script>mermaid.flowchartConfig = {width: 100%}</script>
+
+
+    <h1>Porcentaje del trabajo que hago</h1>
+    <div class="col-md-4">
+    <div class="mermaid">
+        pie title Principales trabajos que hago
+        "Flores para celebraciones" : 300
+        "Flores para decoración" : 160
+        "Ramos":15
+        "Complementos" : 20
+    </div>
+    </div>
+            
+
+      </div>
+    </main>
+
+    
+    <a href="#" class="icon-arriba"><button class="boton__arriba">↑</button> </a>
+    <footer class="footer">
+      <div class="contenedor">
+          <div class="social">
+          <a href="https://es-es.facebook.com/" target="_blank"><img src="img/facebook.png" alt="" class="info__img"></a>
+          </div>
+          <div class="social">
+          <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="" class="info__img"></a>
+          </div>
+          <div class="social">
+          <a href="https://twitter.com/" target="_blank"><img src="img/twiter.png" alt="" class="info__img"></a>
+          </div>
+         
+        
+        <p class="copy">&copy; Pétalos de Amapola: Todos los derechos reservados</p>
+      </div>
+    </footer>
+    <script src="js/menu.js"></script>
+     </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

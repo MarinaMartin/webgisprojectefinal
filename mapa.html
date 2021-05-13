@@ -1,0 +1,152 @@
+<html>
+<head>
+    <title>Pétalos de amapola</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+       integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+       crossorigin=""/>
+       <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+       integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+       crossorigin=""></script>
+
+
+
+
+<body>
+      <header class="header">
+      <div class="contenedor">
+        <a href="index.html"><img class ="logo"  src="img/logo.jpeg" alt="logo"> </a>
+        <img class ="icon-menu" id="btn-menu" src="img/menu.png" alt="menu"> </a>
+        <nav class="nav" id="nav">
+          <ul class="menu">
+            <li class="menu__item"><a href="index.html" class="menu__link select">Inicio</a></li>
+            <li class="menu__item"><a href="sobremi.html" class="menu__link">Sobre mi</a></li>
+            <li class="menu__item"><a href="servicios.html" class="menu__link">Servicios</a></li>
+            <li class="menu__item"><a href="contacto.html" class="menu__link">Contacto</a></li>
+            <li class="menu__item"><a href="mapa.html" class="menu__link">Localización</a></li>
+            <li class="menu__item"><a href="mapa-2.html" class="menu__link">¿Dónde enviamos?</a></li>
+            <li class="menu__item"><a href="tabla.html" class="menu__link">Info</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <style type="text/css">
+        #mapid { height: 400px; }
+        
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        html, body, #map {
+            height: 100%;
+            width: 100%;
+        }
+        .legend {
+            width: 250px;
+            font-size: 16px;
+            color: #333333;
+            font-family: "Open Sans", Helvetica, sans-serif;
+            padding: 10px 14px;
+            background-color: rgba(245,245,220,0.8) ;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        .legend img {
+            width: 50px;
+            margin: auto;
+            display: block;
+        }
+    
+</head>
+<body>
+
+    <div id="map"></div>
+    <script>
+    </style>
+
+</head>
+   <main class="main">
+      
+        <section class="servicios">
+        <h2>Nuestra localización:</h2>
+        </section>
+        </div>
+    </main>
+    
+      <div id="mapid" style="width: 50%; height: 40%;" class="contenedor"></div>
+        <script>
+
+           let map = L.map("mapid", {center: [41.117491345246485, 1.2483631196168108], zoom: 15});
+           var marker = L.marker([41.117491345246485, 1.2483631196168108]).addTo(map);
+
+            L.tileLayer( "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", 
+            {attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}
+            ).addTo(map);
+
+        // Create an empty popup
+        let popup = L.popup();
+
+        // Function to set popup contents
+        function onMapClick(e) {
+            popup
+                .setLatLng(e.latlng)
+                .setContent(
+                    "You clicked the map at -<br>" + 
+                    "<b>lon:</b> " + e.latlng.lng + "<br>" + 
+                    "<b>lat:</b> " + e.latlng.lat
+                )
+                .openOn(map);
+        }
+
+        // Add event listener for click events on the map
+        map.addEventListener("click", onMapClick);
+        // Create Leaflet Control Object for Legend
+        let legend = L.control({position: "bottomleft"});
+
+
+        // Function that runs when legend is added to map
+        legend.onAdd = function() {
+            
+            // Create Div Element and Populate it with HTML
+            let div = L.DomUtil.create("div", "legend");
+            div.innerHTML = 
+            
+                '<p>Localización de la tienda</p>' +
+                
+                '<img src="img/leaflet.png" width= 70px>';
+
+            // Return the Legend div containing the HTML content
+            return div;
+
+        };
+
+        // Add Legend to Map
+        legend.addTo(map);
+
+        </script>
+  <a href="#" class="icon-arriba"><button class="boton__arriba">↑</button> </a>
+
+  <footer class="footer">
+    <div class="contenedor">
+        <div class="social">
+        <a href="https://es-es.facebook.com/" target="_blank"><img src="img/facebook.png" alt="" class="info__img"></a>
+        </div>
+        <div class="social">
+        <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt="" class="info__img"></a>
+        </div>
+        <div class="social">
+        <a href="https://twitter.com/" target="_blank"><img src="img/twiter.png" alt="" class="info__img"></a>
+        </div>
+        <!--target="_blank" sirve para que el enlace se abra en una nueva pestaña-->
+      <p class="copy">&copy; Pétalos de Amapola: Todos los derechos reservados</p>
+    </div>
+  </footer>
+  <script src="js/menu.js"></script>
+</body>
+</html>

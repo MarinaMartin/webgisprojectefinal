@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+* {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body {
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Unicase', serif;
+  letter-spacing: 1.5px;
+}
+
+
+
+.contenedor {
+  margin: auto;
+  width: 99%;
+ 
+}
+/*-------------------Estilos del header-------------------*/
+.header {
+  height: 60px;
+  
+}
+.header .contenedor {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+.logo .icon-menu{
+  margin: 5px;
+  color: #FF36D9;
+  width: 40%;
+  height: default;
+}
+
+
+
+/*------------------Estilos del menu------------------*/
+.nav {
+  position: absolute;
+  top: 60px;
+  left: -100%;
+  width: 100%;
+  transition: all 0.4s;
+  z-index: 1;
+}
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu__link {
+  display: block;
+  padding: 15px;
+  background: #FFAAEF;
+  text-decoration: none;
+  color: #b856a6 ;
+}
+.menu__link:hover, .select {
+  background: rgb(231, 213, 227);
+  color: #96117d;
+}
+.icon-menu {
+  width: 5%;
+  height: 20px;
+  margin: 18px;
+  margin-left: 50%;
+}
+.mostrar {
+  left: 0;
+}
+
+/*--------------Estilos de banner--------------*/
+
+.banner {
+  margin-top: 20px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.banner .contenedor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  color: #FF36D9;
+  text-align: center;
+}
+.banner .banner__titulo {
+  color: #000;
+  text-align: center;
+}
+
+
+.banner__txt {
+  color: #000;
+  display: none;
+}
+
+button{
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 300;
+  font-size: 25px;
+  font-style: italic;
+  color: #fff;
+  background-color: #FFAAEF;
+  border-radius: 15px;
+  border: 3px double #FF36D9;
+  z-index: 1;
+}
+
+/*-----------------Estilos de info-----------------*/
+.info__columna {
+  background: #FF36D9;
+  color: #fff;
+  padding: 15px;
+  margin-bottom: 30px;
+  z-index: 1;
+
+}
+.info img {
+  display: block;
+  margin: auto;
+  width: 60%;
+  height: auto;
+
+}
+
+/*-------boton arriba-----*/
+
+.boton__arriba{
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 300;
+  font-size: 25px;
+  font-style: italic;
+  color: #fff;
+  background-color: #FF36D9;
+  border-radius: 15px;
+  border: 3px double #000;
+  margin-left: 90%;
+  display:scroll;
+  position:fixed;
+  bottom:50px;
+  right:5px;
+}
+/*-----------------Página Servicios------------------*/
+
+.servicios__columna {
+  background: #FFAAEF;
+  color: #fff;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.servicios h2{
+	text-align: center;
+	font-weight: 900;
+	font-size: 25px;
+    font-style: italic;
+}
+.servicios__titulo, .servicios__txt {
+	color:#000;
+	text-align: center;
+}
+.servicios img {
+  display: block;
+  margin: auto;
+  width: 30%;
+  height: auto;
+}
+
+
+/*-----------------Página Sobremi------------------*/
+
+.sobremi__columna {
+  background: #FFAAEF;
+  color: #fff;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.sobremi h2{
+  text-align: center;
+  font-weight: 900;
+  font-size: 25px;
+    font-style: italic;
+}
+.sobremi__titulo, .sobremi__txt {
+  color:#000;
+  text-align: center;
+}
+.sobremi img {
+  display: block;
+  margin: auto;
+  width: 30%;
+  height: auto;
+}
+
+/*------------------Página Contacto--------------*/
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.contacto__titulo, .contacto__txt {
+  color:#000;
+  text-align: center;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  width: 50%;
+ 
+  margin-left: 25%;
+
+}
+
+/*---------------Estilos del mapa 2----------------*/
+
+#contenedorprincipal{
+   padding-right: 25%;
+   padding-left:25%;
+}
+#mapa-2{
+  text-align: center;
+}
+
+#mermaid{
+  padding-right: 25%;
+  padding-left:25%;
+}
+
+/*-----------------Estilos de footer-----------------*/
+
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  padding-top: 30px; 
+  margin-top: 20px;
+}
+
+.footer .social{
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px;
+  background: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+}
+
+/*------------------Estilos responsive------------------*/
+
+@media(min-width:480px) {
+  .logo {
+    font-size: 40px;
+  }
+  .banner__titulo {
+    font-size: 30px;
+    margin: 5px 0;
+  }
+  .banner__txt {
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    margin: 7px 0;
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -90px;
+  }
+  .info__columna {
+    width: 32%;
+  }
+  .info__titulo {
+    font-size: 30px;
+    margin: 5px 0;
+  }
+  
+  
+  .footer .social  {
+    margin: 0 10px;
+  }
+}
+@media(min-width:782px) {  
+  .banner__titulo {
+    font-size: 50px;
+  }
+  
+}
+
+@media(min-width:1024px) {  
+  .contenedor {
+    width: 1000px;
+  }
+  
+  .nav {
+    position: static;
+    width: auto;
+  }
+  .menu {
+    display: flex;
+  }
+  .icon-menu {
+    display: none;
+  }
+  .menu__link {
+    background: none;
+    font-size: 20px;
+  }
+  .select {
+    color: #fff;
+    background: #FF36D9;
+  }
+  .banner__titulo {
+    font-size: 60px;
+  }
+  .banner__txt {
+    font-size: 25px;
+  }
+  .info {
+    margin-top: -120px;
+  }
+  .info__columna {
+    padding: 30px;
+  }
+  .info__titulo {
+    font-size: 40px;
+    text-align: center;
+  }
+ 
+  
+ 
+}
+
+@media(min-width:1280px) {
+  .contenedor {
+    width: 1200px;
+  }
+  .logo {
+    width: 50%;
+  }
+  .banner .contenedor {
+    top: 40%;
+  }
+  .info {
+    margin-top: -220px;
+  }
+}
