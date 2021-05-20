@@ -3,7 +3,7 @@ __En les primeres sesions de l'assignatura se'ns va proposar crear una pàgina w
 
 [Aquest és el link a la pàgina que s'explicarà a acontinuació](https://marinamartin.github.io/practicanum1/)  
 
-Les eines utilitzades per a l'elaboració de la pàgina han estat l'editor de text __Sublime Text 3__ la biblioteca de codi obert de mapes interactius [__Leaflet__](https://leafletjs.com/), per a les fonts s'ha utilitzat [__Google Fonts__](https://fonts.google.com/), i per a les icones de les xarxes socials [__Icon-icons__](https://icon-icons.com/es/). 
+Les eines utilitzades per a l'elaboració de la pàgina han estat l'editor de text __Sublime Text 3__ la biblioteca de codi obert de mapes interactius [__Leaflet__](https://leafletjs.com/), per a les fonts s'ha utilitzat [__Google Fonts__](https://fonts.google.com/), per a les icones de les xarxes socials [__Icon-icons__](https://icon-icons.com/es/), Mermaid.js per a la realització del diagrama, QGIS per a la realització del mapa i la pàgina RestCountries per a la realització de l'API.
 
 ## Metodologia
 Abans de començar a crear la pàgina web em vaig fer un esquema del contingut que volia que tingués la pàgina. En aquest esquema vaig dividir el contingut en pestanyes i vaig fer un petit redactat del contingut de cada una d'elles.  
